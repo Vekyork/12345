@@ -9,13 +9,15 @@ public class Compare {
 //    Написание кода:
 //    Включить компьютер, запустить программу, написать алгоритм, написать код, скомпилировать.
 //    Задания 1.3, 1.4
-
         Integer a = 1;//переменная примитивного типа
         Integer b = 2;
-        String Dog1 = "Bars";//переменная ссылочного типа
+        String Dog1 = "Барс";//переменная ссылочного типа
         String Dog2 = "Boris";
+        String[] dogs1 = {"Шарик", "Барс", "Рыжик", "Тузик", "Лайка"};
+        String[] dogs2 = {"Вулкан", "Барбос", "Пират", "Буран", "Силач"};
         Animal Dog = new Animal("Собака", "Рыжик", 3);  //переменная класса Animal
-//        System.out.println("Сравнение Cat1 и Cat2: " +Cat1.compareTo(Cat2));
+        int[] arr1 = {1, 2, 3, 4, 5, 8, 12, 24, 33, 15, 16, 17}; //для сравнения вышеперечисленных переменных с другими переменными методом перебора создаем массивы
+        int[] arr2 = {1, 2, 4, 22, 33, 44, 33, 16, 19};  //в одном массиве искомая переменная есть, в другом нет
         System.out.println("a= " +a);
         System.lineSeparator();
         System.out.println("b= " +b);
@@ -28,13 +30,12 @@ public class Compare {
         System.lineSeparator();
         System.out.println("Сравнение a и b: " + a.compareTo(b));
         System.lineSeparator();
-        int arr[] = { 4, 6, 7, 9, 12, 15 ,2, 45, 34 };
 
         long nano_startTime = System.nanoTime();
-        for (int i = 0; i < arr.length; i++) {
-            String strToPrint = "arr[" + i + "]=" + arr[i];
+        for (int i = 0; i < arr1.length; i++) {
+            String strToPrint = "arr1[" + i + "]=" + arr1[i];
         }
         long nano_endTime = System.nanoTime() - nano_startTime;
-        System.out.println("Время выполнения сравнения:" + nano_endTime);
+        System.out.println("Время выполнения сравнения, нс: " + nano_endTime);
     }
 }
