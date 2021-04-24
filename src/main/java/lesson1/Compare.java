@@ -32,6 +32,7 @@ public class Compare {
         for (int i = 0; i < arr.length; i++) {
             String strToPrint = "arr[" + i + "]=" + arr[i];
         }
-        long nano_endTime = System.nanoTime();
+        long nano_endTime = System.nanoTime() - nano_startTime;
+        System.out.println("Время выполнения сравнения:" + nano_endTime);
     }
 }
