@@ -9,20 +9,22 @@ public class Compare {
 //    Написание кода:
 //    Включить компьютер, запустить программу, написать алгоритм, написать код, скомпилировать.
 //    Задания 1.3, 1.4
-        Integer a = 1;
+
+        Integer a = 1;//переменная примитивного типа
         Integer b = 2;
-        String Cat1 = "Barsik";
-        String Cat2 = "Boris";
+        String Dog1 = "Bars";//переменная ссылочного типа
+        String Dog2 = "Boris";
+        Animal Dog = new Animal("Собака", "Рыжик", 3);  //переменная класса Animal
 //        System.out.println("Сравнение Cat1 и Cat2: " +Cat1.compareTo(Cat2));
         System.out.println("a= " +a);
         System.lineSeparator();
         System.out.println("b= " +b);
         System.lineSeparator();
-        System.out.println("Cat1= " +Cat1);
+        System.out.println("Dog1= " +Dog1);
         System.lineSeparator();
-        System.out.println("Cat2= " +Cat2);
+        System.out.println("Dog2= " +Dog2);
         System.lineSeparator();
-        System.out.println("Сравнение Cat1 и Cat2: " + Cat1.equals(Cat2));
+        System.out.println("Сравнение Dog1 и Dog2: " + Dog1.equals(Dog2));
         System.lineSeparator();
         System.out.println("Сравнение a и b: " + a.compareTo(b));
         System.lineSeparator();
